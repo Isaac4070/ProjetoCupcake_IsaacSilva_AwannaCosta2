@@ -35,7 +35,7 @@ class MenuCupecakes {
         JMenuBar menuBar = new JMenuBar();
 
         JMenu menuCadastra = createMenu("Cadastrar", new String[]{"Cadastrar cupcake", "Cadastrar combos"}, this::cadastraItemAction);
-        JMenu menuPesquisa = createMenu("Pesquisar", new String[]{"Pesquisar cupcake por sabor", "Pesquisar por faixa de preço", "Listar combos"}, this::pesquisaItemAction);
+        JMenu menuPesquisa = createMenu("Pesquisar", new String[]{"Pesquisar cupcake por sabor", "Pesquisar por faixa de preço"}, this::pesquisaItemAction);
         JMenu menuConta = createMenu("Estoque", new String[]{"Quantidade de cupcake do tipo"}, this::contaItemAction);
         JMenu menuRemove = createMenu("Remover", new String[]{"Remover sabor", "Remover combo"}, this::removeItemAction);
         JMenu menuExiste = createMenu("Existe", new String[]{"Existe cupcake do tipo", "Existe cupcake com sabor"}, this::existeItemAction);
@@ -154,9 +154,6 @@ class MenuCupecakes {
                 break;
             case "Pesquisar por faixa de preço":
                 pesquisaPorFaixaDePreco();
-                break;
-            case "Listar combos":
-                sistema.pesquisaCombos();
                 break;
         }
     }

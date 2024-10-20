@@ -7,10 +7,13 @@ import Exceptions.CupcakeNaoExisteExcepetion;
 import Modelo.Combos;
 import Modelo.Cupcake;
 import Modelo.TipoCupcake;
+//import Modelo.*;
 
 import java.util.List;
 
 public interface SistemaVendas {
+
+    List<Combos> pesquisaCombos(String combo);
 
     void cadastarCupcake(String sabor, double preco, TipoCupcake tipo) throws CupcakeJaExisteExcepetion;
 
@@ -30,9 +33,8 @@ public interface SistemaVendas {
 
     boolean existeCupcakesDoTipo(TipoCupcake tipo);
 
-    List<Combos> pesquisaCombos();
-
     void recuperarDadosCupcake();
 
     void recuperarDadosCombos();
+
 }
