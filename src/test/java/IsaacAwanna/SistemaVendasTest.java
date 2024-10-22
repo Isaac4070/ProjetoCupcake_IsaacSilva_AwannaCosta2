@@ -13,7 +13,7 @@ public class SistemaVendasTest {
 
     private SistemaVendasMap sistema;
 
-    @BeforeEach //Assegura que cada teste começe com o mesmo estado inicial.
+    @BeforeEach //Garante que cada teste começe com o mesmo estado inicial.
     public void setUp() {
         sistema = new SistemaVendasMap();
         try {
@@ -116,3 +116,4 @@ public class SistemaVendasTest {
         assertTrue(testa.existeCupcakesDoTipo(TipoCupcake.CLÁSSICO), "O tipo de cupcake deveria existir.");
     }
 }
+

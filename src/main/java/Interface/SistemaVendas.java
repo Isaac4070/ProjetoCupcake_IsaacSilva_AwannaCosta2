@@ -36,5 +36,4 @@ public interface SistemaVendas {
     void recuperarDadosCupcake();
 
     void recuperarDadosCombos();
-
 }

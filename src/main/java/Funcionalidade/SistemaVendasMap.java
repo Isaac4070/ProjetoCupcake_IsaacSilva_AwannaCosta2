@@ -9,6 +9,7 @@ import Modelo.*;
 
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class SistemaVendasMap implements SistemaVendas {
     private Map<String, Cupcake> cupcakes;
@@ -69,17 +70,12 @@ public class SistemaVendasMap implements SistemaVendas {
         }
     }
 
-
+    //Usando streams
     @Override
     public List<Cupcake> pesquisaCupcakesPorSabor(String sabor) {
-        List<Cupcake> lista = new ArrayList<>();
-        for (Cupcake c : this.cupcakes.values()) {
-            if (c.getSabor().equalsIgnoreCase(sabor)) {
-                lista.add(c);
-            }
-        }
-        System.out.println("Cupcakes encontrados: " + lista.size());
-        return lista;
+        return this.cupcakes.values().stream()
+                .filter(c -> c.getSabor().equalsIgnoreCase(sabor))
+                .collect(Collectors.toList());
     }
 
 
@@ -88,15 +84,12 @@ public class SistemaVendasMap implements SistemaVendas {
         return this.cupcakes.containsKey(sabor);
     }
 
+    //Usando streams
     @Override
     public int contaCupcakesDoTipo(TipoCupcake tipo) {
-        int quantCupcakes = 0;
-        for (Cupcake c : this.cupcakes.values()) {
-            if (c.ehDoTipo(tipo)) {
-                quantCupcakes++;
-            }
-        }
-        return quantCupcakes;
+        return (int) this.cupcakes.values().stream()
+                .filter(c -> c.ehDoTipo(tipo))
+                .count();
     }
 
     @Override
@@ -128,15 +121,12 @@ public class SistemaVendasMap implements SistemaVendas {
         }
     }
 
+    //Usando streams
     @Override
     public List<Cupcake> pesquisaValoresPorFaixa(double valorMinimo, double valorMaximo) {
-        List<Cupcake> listinha = new ArrayList<>();
-        for (Cupcake c : this.cupcakes.values()) {
-            if (c.getPreco() >= valorMinimo && c.getPreco() <= valorMaximo) {
-                listinha.add(c);
-            }
-        }
-        return listinha;
+        return this.cupcakes.values().stream()
+                .filter(c -> c.getPreco() >= valorMinimo && c.getPreco() <= valorMaximo)
+                .collect(Collectors.toList());
     }
 
     @Override
