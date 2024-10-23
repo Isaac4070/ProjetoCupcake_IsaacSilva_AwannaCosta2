@@ -1,18 +1,16 @@
 # Análise de Coesão e Acoplamento
 
 ## Coesão
-A coesão no sistema de vendas de cupcakes é alta. Cada método nas classes `SistemaVendasMap` e `MenuCupecakes` executa uma tarefa específica e bem definida, como cadastro, pesquisa e remoção de cupcakes e combos.
+A coesão no meu sistema de vendas de cupcakes é alta. Cada método nas classes `SistemaVendasMap` e `MenuCupecakes` executa uma tarefa específica e bem definida, como cadastro, pesquisa e remoção de cupcakes e combos.
 
 ## Acoplamento
-O acoplamento é moderado a alto. As classes `SistemaVendasMap` e `MenuCupecakes` dependem diretamente de várias outras classes e exceções personalizadas, o que aumenta a interdependência entre os módulos.
+O acoplamento é de moderado a alto. As classes `SistemaVendasMap` e `MenuCupecakes` dependem diretamente de várias outras classes e exceções personalizadas, o que aumenta a interdependência entre os módulos.
 
-## Pontos de Melhoria
+## Pontos de Melhoria:
 1. **Métodos Longos e Complexos**: Refatorar métodos grandes como `cadastraCupcake`, `recuperarDadosCupcake` e `pesquisaCupcakePorSabor` em métodos menores e mais simples.
-2. **Código Duplicado**: Unificar lógica similar em métodos como `cadastraCupcake`, `cadastraCombo`, `recuperarDadosCupcake` e `recuperarDadosCombos`.
-3. **Nomes Pouco Significativos**: Melhorar a clareza dos nomes de métodos e variáveis para refletirem melhor suas responsabilidades.
-4. **Dependência Direta de Caminhos de Arquivo**: Evitar uso de caminhos absolutos nos ícones das janelas de diálogo para aumentar a portabilidade do código.
-5. **Responsabilidade Excessiva na Classe**: Separar a lógica de negócios da interface gráfica na classe `MenuCupecakes` para aumentar a manutenibilidade e a clareza do sistema.
-6. **Dependência de Exceções Específicas**: Agrupar exceções semelhantes para reduzir o acoplamento.
+2. **Nomes Pouco Significativos**: Melhorar a clareza dos nomes de métodos e variáveis para refletirem melhor suas responsabilidades.
+3. **Dependência Direta de Caminhos de Arquivo**: Evitar uso de caminhos absolutos nos ícones das janelas de diálogo para aumentar a portabilidade do código.
+4. **Responsabilidade Excessiva na Classe**: Separar a lógica de negócios da interface gráfica na classe `MenuCupecakes` para aumentar a manutenibilidade e a clareza do sistema.
 
 ## Conclusão
-O sistema está funcional e bem estruturado, mas há espaço para melhorias em termos de refatoração de código e redução de dependências. Isso aumentará a manutenibilidade e a clareza do sistema, facilitando futuras implementações e manutenção.
+Nosso sistema está funcional, mas tem espaço para melhorias em termos de refatoração de código e redução de dependências. Isso vai aumentar a manutenibilidade e também a clareza do sistema, deixando mais fácil futura manutenção.
