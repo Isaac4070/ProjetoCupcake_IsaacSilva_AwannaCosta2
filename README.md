@@ -17,4 +17,4 @@ O Sistema de Vendas é uma aplicação para gerenciar vendas de cupcakes e combo
 3. **Relatórios de Vendas**: Desenvolver um módulo para gerar relatórios detalhados de vendas, permitindo uma análise mais aprofundada do desempenho do negócio.
 
 ## Diagrama UML
-[Visualize o diagrama UML](C:\Users\isaac\Downloads\Diagrama.UML.jpeg)
+[Visualize o diagrama UML] ![Diagrama.UML.jpeg](diagrama.jpeg)
