@@ -15,3 +15,6 @@ O Sistema de Vendas é uma aplicação para gerenciar vendas de cupcakes e combo
 1. **Integração com API de Pagamentos**: Implementar uma integração com uma API de pagamentos para processar transações de forma segura e eficiente.
 2. **Sistema de Fidelidade**: Criar um sistema de pontos para clientes que compram frequentemente, oferecendo recompensas baseadas no número de compras realizadas.
 3. **Relatórios de Vendas**: Desenvolver um módulo para gerar relatórios detalhados de vendas, permitindo uma análise mais aprofundada do desempenho do negócio.
+
+## Diagrama UML
+[Visualize o diagrama UML](C:\Users\isaac\Downloads\Diagrama.UML)
