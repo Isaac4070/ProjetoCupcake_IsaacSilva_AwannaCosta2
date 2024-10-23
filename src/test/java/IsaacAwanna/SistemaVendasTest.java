@@ -116,4 +116,3 @@ public class SistemaVendasTest {
         assertTrue(testa.existeCupcakesDoTipo(TipoCupcake.CLÁSSICO), "O tipo de cupcake deveria existir.");
     }
 }
-
